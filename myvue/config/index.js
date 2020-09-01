@@ -4,7 +4,7 @@
  * @Autor: Liang Zhong Wei
  * @Date: 2020-08-28 14:07:50
  * @LastEditors: Liang Zhong Wei
- * @LastEditTime: 2020-08-28 14:16:08
+ * @LastEditTime: 2020-09-01 10:15:52
  */
 'use strict'
 // Template version: 1.3.1
@@ -17,12 +17,12 @@ module.exports = {
 
     // Paths
     assetsSubDirectory: 'static',
-    assetsPublicPath: './',
+    assetsPublicPath: '/',
     proxyTable: {},
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
-    port: 8081, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
