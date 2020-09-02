@@ -13,7 +13,12 @@ Vue.use(vuex)
 
 var store = new vuex.Store({
   state: {
-    show: false
+    show: false,
+    number: 10,
+    obj: {
+      name: 'lilei',
+      age: 18
+    }
   },
   getters: {
     get (state) {
@@ -24,12 +29,21 @@ var store = new vuex.Store({
   mutations: {
     change (state) {
       state.show = !state.show
+    },
+    numberChange (state, value) {
+      state.number += value
+    },
+    handleObj (state) {
+      state.obj = {...state.obj, sex: '男'}
     }
   },
   // 异步
   actions: {
     changed (content) {
       content.commit('change')
+    },
+    numberChanged ({commit}, value) {
+      commit('numberChange', value)
     }
   }
 })
