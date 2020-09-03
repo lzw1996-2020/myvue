@@ -4,7 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import vuex from 'vuex'
-
+import './assets/iconfont/iconfont.css'
 Vue.config.productionTip = false
 
 Vue.prototype.bus = new Vue()
@@ -46,6 +46,11 @@ var store = new vuex.Store({
       commit('numberChange', value)
     }
   }
+})
+
+// 全局过滤器
+Vue.filter('filterAll', (value) => {
+  return value + '123'
 })
 
 /* eslint-disable no-new */

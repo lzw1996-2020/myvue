@@ -16,6 +16,8 @@
   "dependencies": {
     "axios": "^0.20.0",
     "less-loader": "^4.1.0",
+    "video.js": "^7.8.4",
+    "videojs-flash": "^2.2.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vuex": "^3.5.1"
